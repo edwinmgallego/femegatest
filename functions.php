@@ -14,7 +14,7 @@ function wpb_theme_setup(){
    add_theme_support('post-formats',array('aside','gallery'));
 
 }
-
+add_action('after_setup_theme','wpb_theme_setup')
 
 
 
