@@ -10,7 +10,8 @@ function wpb_theme_setup(){
     register_nav_menu( array(
         'primary'=>__('Primary Menu');
     ));
-
+   //formatos  de post
+   add_theme_support('post-formats',array('aside','gallery'));
 
 }
 
