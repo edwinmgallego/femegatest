@@ -6,6 +6,12 @@ require_once('wp-bootstrap-navwalker.php');
 function wpb_theme_setup(){
 
     add_theme_support('post-thumbnails');//soporte  para  imagenes del tema
+    //menus  de  navegacion
+    register_nav_menu( array(
+        'primary'=>__('Primary Menu');
+    ));
+
+
 }
 
 
