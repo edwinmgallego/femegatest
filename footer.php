@@ -4,7 +4,7 @@
 </div><!-- /.container -->
 
  <footer class="blog-footer">
-  <p<?php bloginfo( 'name' );?></p>
+  <p><?php bloginfo( 'name' );?></p>
   <p>
     <a href="#"><?php bloginfo( 'description' );?></a>
   </p>
