@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html<?php language_atrributes();?>>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">    
-    <title>Plantilla personaliza para Wordpress</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Inicio</a>
-          <a class="blog-nav-item" href="#">Página 1</a>
-          <a class="blog-nav-item" href="#">Página 2</a>
-          <a class="blog-nav-item" href="#">Página 3</a>
-          <a class="blog-nav-item" href="#">Contacto</a>
-        </nav>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="blog-header">
-        <h1 class="blog-title">Plantilla Wordpress</h1>
-        <p class="lead blog-description">Como crear una plantilla para wodpress con bootstrap</p>
-      </div>
-
+<?php get_header();?>
       <div class="row">
 
         <div class="col-sm-8 blog-main">
@@ -62,20 +30,5 @@
              <h4>Calendario</h4>
              <img src="img/Calendario.jpg" class="img-responsive">
           </div>
-
-
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-     <footer class="blog-footer">
-      <p>© 2018 - Megacurso de Wordpress</p>
-      <p>
-        <a href="#">Volver arriba</a>
-      </p>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-  </body>
-</html>
+          </div><!-- /.row -->
+          <?php get_footer();?>
