@@ -20,11 +20,18 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="#">Inicio</a>
-          <a class="blog-nav-item" href="#">Página 1</a>
-          <a class="blog-nav-item" href="#">Página 2</a>
-          <a class="blog-nav-item" href="#">Página 3</a>
-          <a class="blog-nav-item" href="#">Contacto</a>
+        <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'primary',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+            ));
+        ?>
         </nav>
       </div>
     </div>
